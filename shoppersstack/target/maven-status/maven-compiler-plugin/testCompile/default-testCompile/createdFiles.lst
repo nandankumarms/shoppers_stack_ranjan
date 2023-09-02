@@ -1,0 +1,4 @@
+testCases\LaunchBrowserTest.class
+testCases\RegisterTest.class
+testCases\AddToCartTest.class
+testCases\LoginTest.class
