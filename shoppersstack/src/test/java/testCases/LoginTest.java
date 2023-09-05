@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -23,7 +24,7 @@ public class LoginTest {
 	
 	@Parameters({"url"})
 	@Test(groups = "IT")
-	public void login(String url) throws InterruptedException, IOException {
+	public void login(@Optional("https://demowebshop.tricentis.com") String url) throws InterruptedException, IOException {
 		
 		//Create report object
 		ExtentReports report=new ExtentReports("./Reports/report.html");

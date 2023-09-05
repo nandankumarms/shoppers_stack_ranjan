@@ -29,7 +29,7 @@ public class RegisterTest {
 		HomePage home=new HomePage(driver);
 		RegisterPage register=new RegisterPage(driver);
 		
-		driver.findElement(By.xpath(""));
+		
 		home.clickRegisterLink();
 		
 		register.clickMaleRadioButton();
